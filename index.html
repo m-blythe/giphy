@@ -20,6 +20,16 @@
 </head>
 
 <body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Dog Giphy</h1>
+            <p>Click on a button to see the dogs</p>
+            <p>Then click on any image to make it move, click again to make it stop</p>
+            <p>Add a new dog if you like</p>
+        </div>
+    </div> <!--end of jumbotron div-->
+
+
     <!-- container for buttons -->
     <div id="btnContainer">
         <button type="button" class="btn btn-success" value="golden+retriever">Golden Retriever</button>
@@ -28,7 +38,10 @@
         <button type="button" class="btn btn-success" value="bulldog">Bulldog</button>
         <button type="button" class="btn btn-success" value="german+shepherd">German Shepherd</button>
         <button type="button" class="btn btn-success" value="bloodhound">Bloodhound</button>
-
+        <button type="button" class="btn btn-success" value="dalmatian">Dalmatian</button>
+        <button type="button" class="btn btn-success" value="beagle">Beagle</button>
+        <button type="button" class="btn btn-success" value="corgi">Corgi</button>
+        <br><br>
         <form class="form-inline" id="addDog" name="addDog">
             <div class="form-group">
                 <label for="newDogInput">Enter a New Dog</label>
@@ -37,11 +50,12 @@
             <input id="addDog" class="btn btn-primary" type="submit" value="Submit">
         </form>
         <!-- end of form  -->
-    </div> <!--end of the btnContainer-->
+    </div>
+    <!--end of the btnContainer-->
 
     <div class="row">
         <div class="container">
-                <div id="gifArea"></div>
+            <div id="gifArea"></div>
         </div>
         <!--end of container -->
     </div>
