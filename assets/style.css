@@ -1,0 +1,12 @@
+/*style the button container*/
+    #imgContainer{
+        border: solid  black  5px;
+        height: 100px;
+        width: auto;
+    }
+
+    #btnContainer{
+        border: solid red 5px;
+        height: auto;
+        width: auto;
+    }

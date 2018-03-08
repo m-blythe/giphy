@@ -15,19 +15,37 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!--linking to the css style sheet-->
-    <link src="./assets/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
     <title>giphy</title>
 </head>
 
 <body>
-<!-- Indicates a successful or positive action -->
-<button type="button" class="btn btn-success" value="golden+retriever">Golden Retriever</button>
-<button type="button" class="btn btn-success" value="poodle">Poodle</button>
-<button type="button" class="btn btn-success" value="rottweiler">Rottweiler</button>
-<button type="button" class="btn btn-success" value="bulldog">Bulldog</button>
-<button type="button" class="btn btn-success" value="german+shepherd">German Shepherd</button>
-<button type="button" class="btn btn-success" value="bloodhound">Bloodhound</button>
+    <!-- container for buttons -->
+    <div id="btnContainer">
+        <button type="button" class="btn btn-success" value="golden+retriever">Golden Retriever</button>
+        <button type="button" class="btn btn-success" value="poodle">Poodle</button>
+        <button type="button" class="btn btn-success" value="rottweiler">Rottweiler</button>
+        <button type="button" class="btn btn-success" value="bulldog">Bulldog</button>
+        <button type="button" class="btn btn-success" value="german+shepherd">German Shepherd</button>
+        <button type="button" class="btn btn-success" value="bloodhound">Bloodhound</button>
 
+        <form class="form-inline" id="addDog" name="addDog">
+            <div class="form-group">
+                <label for="newDogInput">Enter a New Dog</label>
+                <input type="text" class="form-control" placeholder="" name="newDog">
+            </div>
+            <input id="addDog" class="btn btn-primary" type="submit" value="Submit">
+        </form>
+        <!-- end of form  -->
+    </div> <!--end of the btnContainer-->
+
+    <div class="row">
+        <div class="container">
+                <div id="gifArea"></div>
+        </div>
+        <!--end of container -->
+    </div>
+    <!-- end of row  -->
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
