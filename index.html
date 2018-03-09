@@ -27,7 +27,8 @@
             <p>Then click on any image to make it move, click again to make it stop</p>
             <p>Add a new dog if you like</p>
         </div>
-    </div> <!--end of jumbotron div-->
+    </div>
+    <!--end of jumbotron div-->
 
 
     <!-- container for buttons -->
@@ -41,17 +42,19 @@
         <button type="button" class="btn btn-success" value="dalmatian">Dalmatian</button>
         <button type="button" class="btn btn-success" value="beagle">Beagle</button>
         <button type="button" class="btn btn-success" value="corgi">Corgi</button>
-        <br><br>
-        <form class="form-inline" id="addDog" name="addDog">
-            <div class="form-group">
-                <label for="newDogInput">Enter a New Dog</label>
-                <input type="text" class="form-control" placeholder="" name="newDog">
-            </div>
-            <input id="addDog" class="btn btn-primary" type="submit" value="Submit">
-        </form>
-        <!-- end of form  -->
     </div>
     <!--end of the btnContainer-->
+    <br>
+    <br>
+    <form class="form-inline">
+        <div class="form-group">
+            <span id="newDogList"><strong>Enter a New Dog:</strong>
+                <input id="addDog" class="form-control" type="text">
+                <input id="addDogBtn" class="btn btn-primary" value="Add Dog" type="submit">
+            </span>
+        </div>
+    </form>
+    <!-- end of form  -->
 
     <div class="row">
         <div class="container">
@@ -64,6 +67,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+
     <script src="./assets/javascript.js"></script>
 </body>
 
